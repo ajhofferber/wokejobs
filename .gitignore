@@ -7,8 +7,11 @@
 # Ignore bundler config.
 /.bundle
 
-#Ignore compiles js
+# Ignore compiles js
 /app/assets/javascripts
+
+# Ignore node_modules
+/angular/node_modules/
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -21,3 +24,4 @@
 
 # Ignore db
 /database/
+

@@ -1,0 +1,9 @@
+LOG:  database system was shut down at 2016-11-19 16:52:17 EST
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "woke_jobs_development" does not exist
+FATAL:  database "woke_jobs_development" does not exist
+FATAL:  database "woke_jobs_development" does not exist
+FATAL:  database "woke_jobs_development" does not exist
+FATAL:  database "carrafa" does not exist

@@ -1,0 +1,7 @@
+#jobs.component
+  h3 what is this some kind of job list
+  ul.jobs
+    li.job(*ngFor="let job of jobs")
+      .title #[strong title: ] {{job.title}}
+      .description #[strong description: ]{{job.description}}
+      .location #[strong location: ] {{job.location}}

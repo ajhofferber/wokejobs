@@ -1,0 +1,77 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+
+header {
+  background-color: dodgerblue;
+  text-align: center;
+}
+
+main {
+  @include outer-container();
+}
+
+.panel.left {
+  @include span-columns(3);
+}
+
+.panel.right {
+  @include span-columns(9);
+}
+
+.component {
+  padding: 10px;
+}
+
+#jobs.component {
+  background-color: limegreen;
+  @include row();
+  ul.jobs {
+    @include span-columns(8);
+    li.job {
+      background-color: $secondary-background-color;
+      margin: 10px 0;
+      border: $base-border;
+      border-radius: $base-border-radius;
+      padding: 5px;
+    }
+  }
+}
+
+#search.component {
+  background-color: tomato;
+
+  ul.checkboxes {
+    li {
+      @include row();
+      input {
+        @include span-columns(2);
+        margin: 5px 0 0 0;
+      }
+      label {
+        @include span-columns(10);
+        text-align: left;
+      }
+
+    }
+
+  }
+
+  button.search-button {
+    width: 100%;
+  }
+}

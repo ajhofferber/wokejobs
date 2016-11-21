@@ -1,0 +1,24 @@
+#search.component
+  h3 oh what is this a search box
+  input(type="text", placeholder="serch fer job", [(ngModel)]="searchJob")
+  input(type="text", placeholder="city or smthn", [(ngModel)]="searchCity")
+  h6 what are these options
+  select
+    option some option here
+    option some thing here
+    option some potato here
+    option some taco here
+  ul.checkboxes
+    li
+      input(type="checkbox")
+      label check this
+    li
+      input(type="checkbox")
+      label check that
+    li
+      input(type="checkbox")
+      label check something else
+    li
+      input(type="checkbox")
+      label nachos
+  button.search-button((click)="search()") nerd

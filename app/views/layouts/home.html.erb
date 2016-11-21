@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Woke Jobs</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= javascript_include_tag 'polyfills' %>
+    <%= javascript_include_tag 'vendor' %>
+    <%= javascript_include_tag 'app' %>
+  </body>
+  <html>
